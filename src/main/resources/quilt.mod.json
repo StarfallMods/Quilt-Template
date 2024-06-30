@@ -1,34 +1,34 @@
 {
 	"schema_version": 1,
 	"quilt_loader": {
-		"group": "${group}",
-		"id": "example_mod",
+		"group": "io.starfall",
+		"id": "template",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
+			"name": "Template",
 			"description": "A short description of your mod.",
 			"contributors": {
-				"Your name here": "Owner"
+				"Person": "Title"
 			},
 			"contact": {
-				"homepage": "https://example.com/",
-				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
-				"sources": "https://github.com/QuiltMC/quilt-template-mod"
+				"homepage": "https://starfall.io",
+				"issues": "https://github.com/StarfallMods/Quilt-Template/issues",
+				"sources": "https://github.com/StarfallMods/Quilt-Template"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/template/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "io.starfall.template.TemplateMod"
 		},
 		"depends": [
 			{
 				"id": "quilt_loader",
-				"versions": ">=0.19.1"
+				"versions": ">=0.26.1"
 			},
 			{
 				"id": "quilted_fabric_api",
-				"versions": ">=7.0.2"
+				"versions": ">=9.0.0"
 			},
 			{
 				"id": "minecraft",
@@ -36,5 +36,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "template.mixins.json"
 }
